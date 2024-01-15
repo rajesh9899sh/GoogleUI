@@ -2,37 +2,162 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  height: 60px;
+  display: flex;
+  padding: 6px;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navWrapper {
+  min-width: auto;
+  flex-grow: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.elements {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  padding-left: 32px;
+  height: 48px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image {
+  min-height: 92px;
+  max-width: 290px;
+}
+
+.search {
+  padding: 20px;
+  margin: auto;
+  width: 584px;
+  padding-top: 20px;
+}
+.searchInput {
+  width: 584px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  outline: none;
+  font-size: 15px;
+  transition: box-shadow;
+}
+
+.searchInput:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0.1, 0.2);
+}
+
+.searchButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.googleSearchButton,
+.feelingLuckyButton {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow;
+}
+
+.googleSearchButton {
+  margin-right: 5px;
+}
+
+.googleSearchButton:hover,
+.feelingLuckyButton:hover {
+  background-color: #f1f3f4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: 1px solid #c8d1d9;
+}
+
+.googleOfferedText {
+  text-align: center;
+  font-size: 14px;
+  color: #5f6368;
+  height: 276px;
+}
+
+.language {
+  color: #1a0dab;
+  margin-right: 5px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.language:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
+  padding: 10px;
+}
+
+.footerColumnFirst {
+  display: flex;
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  font-family: arial, sans-serif;
+  color: #202124;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerColumnSecond {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 15px;
+  padding: 15px 35px;
+  font-family: arial, sans-serif;
+  color: #202124;
+  justify-content: space-between;
+}
+.footerLinks a,
+.footerLinksRight a {
+  color: #202124;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+.footerLinks a:hover,
+.footerLinksRight a:hover {
+  text-decoration: underline;
+}
+
+.signInButtonStyle {
+  background: #1a73e8;
   color: white;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 8px;
+  min-width: 96px;
+  padding: 9px 23px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signInButtonStyle:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
